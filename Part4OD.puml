@@ -20,6 +20,15 @@ name = "Include Path"
 object "<u>Remote Files:Folder</u>" as rmtFiles{
 name = "Remote Files"
 }
+object "<u>.htaccess:File</u>" as htaccess{
+name = ".htaccess"
+}
+object "<u>.htrouter:File</u>" as htrouter{
+name = ".htrouter"
+}
+object "<u>index.html:File</u>" as indexhtml{
+name = "index.html"
+}
 
 root --> srcFiles
 root --> incPath
@@ -27,4 +36,7 @@ root --> rmtFiles
 srcFiles --> phalcon
 srcFiles --> cache
 srcFiles --> public
+public --> htaccess
+public --> htrouter
+public --> indexhtml
 @enduml
