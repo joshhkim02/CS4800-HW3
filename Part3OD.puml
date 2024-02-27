@@ -1,0 +1,25 @@
+@startuml
+object "<u>course:Course</u>" as c{
+}
+object "<u>c1:Course</u>" as c1{
+name = "CS5800 - Advanced Software Engineering"
+instructor = c1Instructor
+textbook = c1Textbook
+}
+object "<u>c1Instructor:Instructor</u>" as i1{
+firstName = "Nima"
+lastName = "Davarpanah"
+officeNumber = "3-2636"
+}
+object "<u>c1Textbook:Textbook</u>" as t1{
+author = "Robert Cecil Martin"
+publisher = "Pearson"
+title = "Clean Code: A Handbook of Agile Software Craftsmanship"
+}
+
+c --> i1
+c --> t1
+i1 --> c1
+t1 --> c1
+
+@enduml

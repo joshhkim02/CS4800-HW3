@@ -1,0 +1,37 @@
+@startuml
+object "<u>employee:Employee</u>" as em{
+}
+
+object "<u>employeeOne:SalariedEmployee</u>" as em1{
+firstName = "Joe"
+lastName = "Jones"
+socialSecurityNumber = "111-11-1111"
+weeklySalary = 2500
+}
+object "<u>employeeTwo:HourlyEmployee</u>" as em2{
+firstName = "Stephanie"
+lastName = "Smith"
+socialSecurityNumber = "222-22-2222"
+wage = 25
+hoursWorked = 32
+}
+object "<u>employeeThree:CommissionEmployee</u>" as em3{
+firstName = "Nicole"
+lastName = "Dior"
+socialSecurityNumber = "333-33-3333"
+commissionRate = 15
+grossSales = 50000
+}
+object "<u>employeeFour:BaseEmployee</u>" as em4{
+firstName = "Mike"
+lastName = "Davenport"
+socialSecurityNumber = "444-44-4444"
+baseSalary = 95000
+}
+
+em --> em1
+em --> em2
+em --> em3
+em --> em4
+
+@enduml

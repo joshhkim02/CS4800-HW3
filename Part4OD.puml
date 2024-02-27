@@ -1,0 +1,30 @@
+@startuml
+object "<u>demo1:Folder</u>" as root{
+name = "demo1"
+}
+object "<u>srcFiles:Folder</u>" as srcFiles{
+name = "Source Files"
+}
+object "<u>.phalcon:Folder</u>" as phalcon{
+name = ".phalcon"
+}
+object "<u>cache:Folder</u>" as cache{
+name = "cache"
+}
+object "<u>public:Folder</u>" as public{
+name = "public"
+}
+object "<u>Include Path:Folder</u>" as incPath{
+name = "Include Path"
+}
+object "<u>Remote Files:Folder</u>" as rmtFiles{
+name = "Remote Files"
+}
+
+root --> srcFiles
+root --> incPath
+root --> rmtFiles
+srcFiles --> phalcon
+srcFiles --> cache
+srcFiles --> public
+@enduml

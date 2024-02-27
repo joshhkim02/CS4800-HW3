@@ -1,0 +1,23 @@
+@startuml
+object "<u>ship:Ship</u>" as sh{
+}
+object "<u>ship:Ship</u>" as sh1{
+shipName = "Titanic"
+yearBuilt = "March 31st, 1909"
+}
+object "<u>cruiseShip:Ship</u>" as sh2{
+shipName = "MVGemini"
+yearBuilt = "May 30th, 1991"
+maxNumberPassengers = 100
+}
+object "<u>cargoShip:Ship</u>" as sh3{
+shipName = "EverGiven"
+yearBuilt = "September 25th, 2018"
+cargoCapacityInTonnage = 220940
+}
+
+sh --> sh1
+sh --> sh2
+sh --> sh3
+
+@enduml
